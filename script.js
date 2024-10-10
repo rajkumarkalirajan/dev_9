@@ -8,7 +8,8 @@ function init() {
     var d4 = document.getElementById('div4');
 
     // Log to console and change styles/content
-    console.log('I was clicked');
+		console.log('I was clicked');
+
     d4.style.backgroundColor = '#C00';  // Change background color to red
     d4.innerHTML = '<strong>Goodbye</strong>';  // Change content to "Goodbye"
   }
