@@ -1,21 +1,25 @@
 function init() {
-  // Add your JavaScript between these two lines of code
+  // Function to handle both alert and div changes
   function myEventFunction() {
+    // Show an alert
     alert('Hello');
+
+    // Get the div4 element
+    var d4 = document.getElementById('div4');
+
+    // Log to console and change styles/content
+    console.log('I was clicked');
+    d4.style.backgroundColor = '#C00';  // Change background color to red
+    d4.innerHTML = '<strong>Goodbye</strong>';  // Change content to "Goodbye"
   }
 
+  // Get the div4 element
   var d4 = document.getElementById('div4');
 
-  // First event listener to show an alert
+  // Add a single event listener to handle all actions
   d4.addEventListener('click', myEventFunction);
-
-  // Second event listener for other functionalities
-  d4.addEventListener('click', function() {
-    console.log('I was clicked');
-    d4.style.backgroundColor = '#C00';  
-    d4.innerHTML = '<strong>Goodbye</strong>';  
-  });
 }
 
+// Load the script after the DOM is ready
 window.addEventListener('load', init);
 
