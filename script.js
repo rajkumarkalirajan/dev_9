@@ -6,7 +6,7 @@ function init() {
 
   function myEventFunction() {
     alert('Hello');
-    
+
     if (div4) {
       console.log('I was clicked');
       div4.style.backgroundColor = '#C00';  
